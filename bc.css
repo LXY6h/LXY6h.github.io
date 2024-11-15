@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(81, 109, 255);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 400px;
+}
+
+.btn {
+    border: none;
+    width: 80px;
+    height: 50px;
+    color: rgb(88, 88, 241);
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.container1 {
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    display: none;
+
+}
+
+.bigchoose {
+    display: flex;
+}
+
+.choose {
+    width: 155px;
+    height: 155px;
+    border: 3px solid white;
+    margin: 10px;
+}
+
+.choose:hover {
+    background-color: white;
+    color: rgb(88, 88, 241);
+    ;
+}
+
+.choose img {
+    width: 100px;
+    height: 100px;
+}
+
+.container2 {
+    display: none;
+}
+
+.container2 .time {
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+#time {
+    position: absolute;
+    top: 0;
+    left: 170px;
+}
+
+.score {
+    position: absolute;
+    top: 0;
+    right: 120px;
+}
+
+#score {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.random {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.random.caught {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.random img {
+    width: 150px;
+    height: 150px;
+}
+.hei{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.552);
+    line-height: 100px;
+    position: absolute;
+    top: 300px;
+    display: none;
+}
